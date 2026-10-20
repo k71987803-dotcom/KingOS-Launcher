@@ -1,16 +1,4 @@
-name: KingOS APK Build
-
-on:
-workflow_dispatch:
-
-jobs:
-build:
-runs-on: ubuntu-latest
-steps:
-- name: Download KingOS
-uses: actions/checkout@v4
-
-  - name: Set up Java
+- name: Set up Java
     uses: actions/setup-java@v4
     with:
       distribution: temurin
